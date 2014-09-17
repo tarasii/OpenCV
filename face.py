@@ -29,17 +29,7 @@ while(True):
 
     cv2.imshow('img',img)
 
-    #ret,thresh = cv2.threshold(gray,100,200,0)
-    #cv2.imshow('frame',thresh)
-    #contours, hierarchy = cv2.findContours(thresh,cv2.RETR_TREE,cv2.CHAIN_APPROX_SIMPLE)
-    
-    #height, width = gray.shape
-    #blank_image = np.zeros((height,width,3), np.uint8)
-    #blank_image[:,:] = (0,127,0)
-    #cv2.drawContours(blank_image, contours, -1, (0,255,0), 1)
-
-    # Display the resulting frame
-    #cv2.imshow('frame',blank_image)
+    #ret,thresh = cv2.threshold(gray,127,255,0)
 
     if cv2.waitKey(1) & 0xFF == ord('q'):
         break
